@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>About YutongWu</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Yutong Wu</h1>
+        <p>My CV for GitHub Pages</p>
+        <p class="view"><a href="https://github.com/Ohraincu/Ohraincu.github.io">View the Project on GitHub <small>orderedlist/minimal</small></a></p>
+      </header>
+      <section>
+	<div id="content"></div>
+
+	<script>
+	    $.get('./Static/md/index.md', function(response, status, xhr){			
+		$("#content").html(marked(response));
+	    });
+	</script>
+        <h1>About Me</h1>
+
+        <p>Now, I am a graduate student in the School of Mathematical Sciences, Dalian University of Technology, Dalian, China.</p>
+
+        <p>I am interested in: computer vision, low-level tasks, and deep learning.</p>
+
+	<h1>Publishion</h1>
+
+        <h2>Single Image Deraining</h2>
+
+	<table>
+	<tr>
+	<td style="width: 20%">
+	  <div class="project-logo">
+	  <img src="fig/overall.png" style="width: 100%">
+	  <img src="fig/result1.jpeg" style="width: 100%">
+	  </div>
+	  </td>
+	  <td style="width: 70%;">
+	  <div class="" >
+	  <p style="font-size: 14pt; color: black">
+	   Joint Self-Attention and Scale-Aggregation for Self-Calibrated Deraining Network
+	   </p>
+	   <p>
+	   Cong Wang, <strong>Yutong Wu</strong>, Zhixun Su, Junyang Chen
+	   </p>
+	   <p>
+	   ACM Multimedia. 2020.
+	   </p>
+	   <p>
+	   <a href="https://github.com/Ohraincu/JDNet">[Code]</a>
+	   <a href="https://arxiv.org/abs/2008.02763">[Paper]</a>
+	   </p>
+	   </div>
+	   </td>
+	   </tr>
+	 </table>
+
+
+	<h2>Single Image Dehazing</h2>
+
+        <h1>Contact Me</h1>
+          <p>Email: ytongwu@mail.dlut.edu.cn</p>
+          <p>My Github Web: <a href="https://github.com/Ohraincu">https://github.com/Ohraincu</a></p>
+      </section>
+      <footer>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+  </body>
+</html>
